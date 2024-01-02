@@ -1,0 +1,1 @@
+﻿Import-csv "C:\Temp\MyScripts\Set-SmartCardLoginRequired\UserAccounts.csv" | % { Set-ADUser -Identity $_.Users -SmartcardLogonRequired $true}

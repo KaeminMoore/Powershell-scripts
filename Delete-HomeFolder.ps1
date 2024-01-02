@@ -11,7 +11,8 @@
     $MOSTLOUISs622 = New-Object System.Management.Automation.Host.ChoiceDescription "&MOSTLOUIS3S622","CSC Home Folders"
     $AIOMOSTL3fp9 = New-Object System.Management.Automation.Host.ChoiceDescription "&AIOMOSTL3FP9","FPAC Home Folders"
     $MOKA3 = New-Object System.Management.Automation.Host.ChoiceDescription "&MOKA3","NITC Home Folders"
-    $Options = [System.Management.Automation.Host.ChoiceDescription[]]($AIOMOSTL3FP8,$MOSTLOUIS3s621,$AIOMOST23FP1,$MOSTLOUISs622,$AIOMOSTL3fp9,$MOKA3)
+    $COFT3 = New-Object System.Management.Automation.Host.ChoiceDescription "&COFT3","NRCS Home Folders"
+    $Options = [System.Management.Automation.Host.ChoiceDescription[]]($AIOMOSTL3FP8,$MOSTLOUIS3s621,$AIOMOST23FP1,$MOSTLOUISs622,$AIOMOSTL3fp9,$MOKA3,$COFT3)
     $result = $host.ui.PromptForChoice($title, $message, $options, 0)
 
     Switch($result){
@@ -21,4 +22,5 @@
     3{get-item "\\mostlouis3s622\Home\$userName" | remove-item -recurse -force}
     4{get-item "\\aiomostl3fp9\Home`$\FSA\$username" | remove-item -Recurse -Force}
     5{get-item "\\usda.net\ocio\HOME\MOKA3\DISC\$username" | remove-item -Recurse -force}
+    6{get-item "\\usda.net\NRCS\HOME\COFT3\NRCS\$username" | remove-item -Recurse -force}
     }

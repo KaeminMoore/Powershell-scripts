@@ -1,0 +1,1 @@
+﻿Import-csv "C:\Temp\MyScripts\Set-SmartCardLoginRequired\UserAccounts.csv" | % { Get-ADUser -Identity $_.Users  -Properties 'SmartcardLogonRequired' | select name, smartcardlogonrequired} | Out-file  "C:\Temp\MyScripts\Set-SmartCardLoginRequired\LoginEnabledComputers.txt"

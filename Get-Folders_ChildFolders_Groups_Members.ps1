@@ -1,4 +1,4 @@
-﻿Get-ChildItem \\aiomostl3fp5\shared$\internal\cfo\test -Recurse | where{$_.psiscontainer} |
+﻿Get-ChildItem E:\Shared\Internal\cfo -Recurse | where{$_.psiscontainer} |
 Get-Acl | % {
     $path = $_.path
     $_.Access | % {
