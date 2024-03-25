@@ -3,7 +3,7 @@
 Import-Module activedirectory
   
 #Store the data from ADUsers.csv in the $ADUsers variable
-$ADUsers = Import-csv C:\Users\Terry.Joseph\Desktop\bulk_users1.csv
+$ADUsers = Import-csv C:\Users\Justin.Moore\Desktop\bulk_users1.csv
 
 #Loop through each row containing user details in the CSV file 
 foreach ($User in $ADUsers)
