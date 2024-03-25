@@ -1,22 +1,4 @@
-﻿<#
-Phase 1 script to initite update to Win10-1809 after hours.
-Must be run as admin and in an UNRESTRICTED PowerShell session (e.g. from a server)
-A copy of psexec must be in the directory from which this is being run.
-Use the RESULTS.TXT file as the input file for Phase 2.
-V1.0 - Mike Bishop / USDA-OCIO-TSD-TX / 29 April 2019
-            ___
-           |   |
-           |   '._   _
-           |      ``` '|
-       ____|           \
-      `-.               |
-         \ _           /
-          ` `\       /`
-              \   .'`
-               \  \ 
-                '-;
-#>
-
+﻿
 Start-Transcript results.txt -append -IncludeInvocationHeader
 
 # Prompt user for time of day to run this script
