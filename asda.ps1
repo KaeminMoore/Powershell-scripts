@@ -1,1 +1,1 @@
-wmic /node: ARDILPRI5008127 bios .\Get-SerialNumber.ps1
+wmic /node: xxxxxx bios .\Get-SerialNumber.ps1
