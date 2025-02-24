@@ -92,11 +92,11 @@ $contexts = @(
 )
 
 # Output file
-$outputFile = "IT_Specialist_Tasks.txt"
+$outputFile = "C:\Temp\IT_Specialist_Tasks.txt"
 $taskList = @()
 
 # Generate 30,000 unique tasks
-for ($i = 1; $i -le 30000; $i++) {
+for ($i = 1; $i -le 10000; $i++) {
     $action = Get-Random -InputObject $actions
     $category = Get-Random -InputObject ($taskCategories.Keys)
     $task = Get-Random -InputObject $taskCategories[$category]
